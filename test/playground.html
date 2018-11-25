@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<!-- MATCH -->
+<div>
+  <h1 id="case-simple-h1"></h1>
+  <h2 id="case-simple-h2"></h2>
+  <h3 id="case-simple-h3"></h3>
+  <h4 id="case-simple-h4"></h4>
+  <h5 id="case-simple-h5"></h5>
+  <h6 id="case-simple-h6"></h6>
+
+  <h1><div id="case-descendant"></div></h1>
+
+  <div id="case-simple-ancestor"><h1></h1></div>
+
+  <h1>
+    <h2 id="case-has-headly"><h3></h3></h2>
+  </h1>
+
+  <div id="case-ancestor-multiple-id_1">
+    <h1></h1>
+    <div id="case-ancestor-multiple-id_2"></div>
+  </div>
+</div>
+
+<!-- NOT MATCH -->
+<div>
+  <h1></h1>
+  <h2></h2>
+  <h3></h3>
+  <h4></h4>
+  <h5></h5>
+  <h6></h6>
+
+  <h1>
+    <div id="case-descendant-multiple-id_1"></div>
+    <div id="case-descendant-multiple-id_2"></div>
+  </h1>
+
+  <div id="case-ancestor-multiple-headly">
+    <h1></h1>
+    <h2></h2>
+  </div>
+</div>

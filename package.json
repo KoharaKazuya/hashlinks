@@ -1,0 +1,14 @@
+{
+  "name": "hashlinks",
+  "version": "0.0.0",
+  "devDependencies": {
+    "microbundle": "^0.7.0"
+  },
+  "license": "MIT",
+  "module": "dist/hashlinks.mjs",
+  "private": true,
+  "scripts": {
+    "build": "microbundle build --no-sourcemap --format=es src/index.mjs",
+    "build:watch": "microbundle watch --no-sourcemap --format=es src/index.mjs"
+  }
+}
